@@ -1,0 +1,415 @@
+html {
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    background-color: #F84646;
+    color: white;
+    border: none;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: "manrope", sans-serif;
+    font-weight: 600;
+    border-radius: .5rem;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#presentationContainer {
+    padding: 2.5rem 7.5rem;
+    height: 100vh;
+    background-color: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%);
+    background-image: url('./assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#presentation {  
+    width: 37.5rem;
+
+}
+
+.container {
+    padding: 5rem  7.5rem;
+    text-align: center;
+}
+
+.contactTitle {
+    margin-top: .5rem;    
+}
+
+.container p {
+    margin-top: 1.5rem;
+}
+
+.container button {
+    margin-top: 2rem;
+    transition: opacity .3s ease-in-out, transform 0.5s .2s;
+}
+
+.container button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.backgroundGradient {
+    background: linear-gradient(180deg, #FFF 0%, #d9d9d9 100%);
+}
+
+.background-red {
+    background-color: #F84646;
+    color: white;
+}
+
+.background-grey {
+    background-color: #F4F5F7;
+}
+
+#qualities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#qualities img {
+    margin: 0 2.5rem;
+}
+
+.articleContainer {
+    display: flex; 
+    flex-direction: row;
+}
+
+.articleContainer:nth-child(even) {
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+}
+
+.articleDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0;
+    justify-content: space-between;
+}
+
+.articleDetails button {
+    font-size: 1rem;
+}
+
+.articleContainer:nth-child(even) .articleDetails {
+    margin: 0 0 0 2.5rem;
+}
+
+.footerList {
+    display: flex;
+    text-align: left;
+    list-style: none;
+}
+
+.footerList ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footerList ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footerList ul li:first-child {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.footerCopyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8.5rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.gridItem h3 {
+    margin-top: 0.5rem;
+}
+
+.gridItem p {
+    margin: 0.5rem 0 0;
+}
+
+.gridContainerCompanies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.gridItemCompanies {
+    background-color: #FFFFFF;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.company1 {
+    grid-area: 3 / 1;
+}
+
+.company2 {
+    grid-area: 2 / 2;
+}
+
+.company3 {
+    grid-area: 3 / 2;
+}
+
+.company4 {
+    grid-area: 1 / 3;
+}
+
+.company5 {
+    grid-area: 2 / 3;
+}
+
+.company6 {
+    grid-area: 3 / 3;
+}
+
+.company7 {
+    grid-area: 2 / 4;
+}
+
+.company8 {
+    grid-area: 3 / 4;
+}
+
+.company9 {
+    grid-area: 3 / 5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #presentationContainer {
+        padding: 5rem 4rem;
+    }
+
+    .container {
+        padding: 5rem 4rem;
+    }
+
+    .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articleContainer img {
+    object-fit: cover;
+    }
+
+    .gridContainerCompanies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    }
+
+    .company1 {
+    grid-area: auto;
+    }
+
+    .company2 {
+    grid-area: auto;
+    }
+
+    .company3 {
+    grid-area: auto;
+    }
+
+    .company4 {
+    grid-area: auto;
+    }
+
+    .company5 {
+    grid-area: auto;
+    }
+
+    .company6 {
+    grid-area: auto;
+    }
+
+    .company7 {
+    grid-area: auto;
+    }
+
+    .company8 {
+    grid-area: auto;
+    }
+
+    .company9 {
+    grid-area: auto;
+    }
+}
+
+@media only screen and (max-width: 767px)  {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #presentationContainer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerList {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .footerList ul {
+        margin-top: 3rem;
+    }
+
+    .footerList ul:first-child {
+        margin-top: 0;
+    }
+
+    .gridContainer {
+    grid-template-columns: 1fr;
+    }
+
+    .footerCopyright {
+    flex-direction: column-reverse;
+    }
+
+    .footerCopyright div:first-child {
+    margin-top: 3rem;
+    }
+
+    #qualities {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    }
+    
+    #qualities img {
+    transform: rotate(90deg);
+    margin: 2.5rem 0;
+    }
+
+    .articleContainer {
+    display: flex; 
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    .articleContainer:nth-child(even) {
+    flex-direction: column-reverse;
+    }
+
+    .articleDetails {
+    text-align: center;
+    align-items: normal;
+    margin: 2rem 0 0 0;
+    }
+
+    .articleContainer:nth-child(even) .articleDetails {
+    margin: 2rem 0 2rem 0;
+    }
+
+    .gridContainerCompanies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    }
+
+    .gridItemCompanies {
+        height: 6rem;
+    }
+
+    .company1 {
+    grid-area: auto;
+    }
+
+    .company2 {
+    grid-area: auto;
+    }
+
+    .company3 {
+    grid-area: auto;
+    }
+
+    .company4 {
+    grid-area: auto;
+    }
+
+    .company5 {
+    grid-area: auto;
+    }
+
+    .company6 {
+    grid-area: auto;
+    }
+
+    .company7 {
+    grid-area: auto;
+    }
+
+    .company8 {
+    grid-area: auto;
+    }
+
+    .company9 {
+    grid-area: auto;
+    }
+
+
+}
